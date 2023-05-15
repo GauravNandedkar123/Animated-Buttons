@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.2s ease;
+    }
+    
+    .button:hover {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+    
+    /* Animation Styles */
+    .button-scale {
+      animation: scale 2.3s ease-in-out;
+    }
+    
+    .button-fade {
+      animation: fade 2.3s ease-in-out;
+    }
+    
+    .button-slide {
+      animation: slide 2.3s ease-in-out;
+    }
+    
+    .button-rotate {
+      animation: rotate 2.3s ease-in-out;
+    }
+    
+    .button-bounce {
+      animation: bounce 2.3s ease-in-out;
+    }
+    
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes fade {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(20px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body> 
+    <center>
+  <button class="button button-scale">Scale</button>
+  <button class="button button-fade">Fade</button>
+  <button class="button button-slide">Slide</button>
+  <button class="button button-rotate">Rotate</button>
+  <button class="button button-bounce">Bounce</button> 
+</center>
+
+</body>
+</html>
